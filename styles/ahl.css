@@ -1,0 +1,269 @@
+/* NORMALIZACION */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box ;
+    font-family: Verdana;
+}
+
+/* BODY */
+body{
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    height: 100vh;
+}
+/* HEADER */
+header{
+    padding: 1rem 1rem 0 1rem;
+    background-color: rgb(24, 24, 141);
+    box-shadow: 0px 2px 5px rgb(5, 5, 5);
+}
+nav>a{
+    text-decoration: none;
+    padding-right: 0.75rem;
+    color: rgb(230, 230, 230);
+}
+#current{
+    text-decoration: underline;
+    text-shadow: 0px 0px 5px white;
+}
+.top{
+    display:flex;
+    padding-bottom: 1rem;
+}
+h1{
+    margin-left: 1rem;
+    width: 100vw;
+    display: flex;
+    /* color: rgb(219, 165, 64); */
+    color: #002026;
+    flex-direction: column;
+    justify-content: center;
+    box-shadow: 2px 2px 5px black;
+    background-image: url("../assets/hockey2.jpg");
+    background-size: cover;
+    background-position: 0% 95%;
+    filter: grayscale(100%);
+    font-size: 3rem;
+    text-align: center;
+    /* text-shadow: 2px 2px 1px black; */
+}
+#logo{
+
+    height: 6rem;
+}
+/* MAIN */
+main{
+    margin-top: 0.5rem;
+    padding: 1rem;
+    display: flex;
+    flex-grow: 1;
+    background-color: whitesmoke;
+    color: #002026;
+}
+main a{
+    color: rgb(33, 33, 240);
+}
+article{
+    padding-left: 0.5rem;
+}
+h3, h4, p{
+    padding-top: 0.5rem;
+}
+h4.mdhlevents{
+    padding-left: 1rem;
+}
+h2{
+    text-decoration: underline;
+    display: block;
+}
+table{
+    padding-top: 1rem;
+}
+th, td{
+    padding: 0.5rem 1rem 0.5rem 1rem;
+}
+th{
+    text-align: left;
+}
+li>p{
+    padding-left: 1rem;
+}
+article>ol, article>ul{
+    padding-left: 1.5rem;
+}
+li>ol{
+    padding-left: 2.5rem;
+}
+iframe{
+    filter: grayscale(100%);
+    box-shadow: 1px 1px 5px black;
+    /* opacity: 0.5; */
+}
+form{
+    display: block;
+    margin: auto;
+    margin-top: 1rem;
+    padding-left: 0.5rem;
+    width: 66%;
+    border: 1px solid black;
+}
+div.column{
+    padding-right: 1rem;
+}
+fieldset{
+    border: 0;
+    margin-top: 0.5rem;
+}
+legend{
+    font-weight: bold;
+    padding-bottom: 0.5rem;
+}
+caption{
+    text-align: left;
+    font-weight: bold;
+}
+span{
+    font-weight: bold;
+}
+.dflex{
+    display: flex;
+    align-items: center;
+}
+section{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.gameinfo{
+    flex: 1;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.locations{
+    background-color: rgb(206, 52, 6);
+    margin-top: 2rem;
+    padding-top: 0;
+    box-shadow: 2px 2px 4px black;
+}
+.locations td{
+    padding: 0 0.5rem 0 0.5rem;
+    color: snow;
+} 
+.column{
+    display: flex;
+    flex-direction: column;
+}
+.spcbtwn{
+    justify-content: space-between;
+}
+.top{
+    justify-content: flex-start;
+}
+article.dflex{
+    padding: 0;
+}
+.block{
+    display: block;
+}
+.contactos{
+    justify-content: space-between;
+}
+.fecha{
+    text-align: right;
+}
+.underline{
+    text-decoration: underline;
+}
+.italics{
+    font-style: italic;
+}   
+#iparent, #iaddress{
+    width: 360px;
+}
+#iparent, #idate, #btnsubmit{
+    margin-top: 1rem;
+}
+#btnsubmit{
+    margin-right: 1rem;
+}
+#idate, #btnsubmit{
+    margin-bottom: 1rem;
+}
+#titvert{
+    writing-mode: vertical-rl;
+    text-orientation: mixed;
+    font-size: xx-large;
+    transform: rotate(-180deg);
+}
+@keyframes animacion {
+    0%   {background-color: red;}
+    25%  {background-color: yellow;}
+    50%  {background-color: yellow;}
+    100% {background-color: red;}
+  }
+#alert{
+    margin: 2vw;
+    padding: 1vw 0vw 1vw 0vw;
+    border-radius: 5px;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    align-items: center;
+    background-color: red;
+    animation-name: animacion;
+    animation-duration: 6s;
+    animation-delay: 2s;
+    animation-iteration-count:infinite;
+}
+
+.spcbtwn{
+    justify-content: space-between;
+}
+.remleft{
+    margin-left: 0.5rem;
+}
+/* FOOTER */
+footer{
+    background-color: snow;
+}
+
+form{
+    /* display: block; */
+    margin: auto;
+    /* margin-top: 1rem; */
+    padding: 0.5rem;
+    width: 300px;
+    border: 1px solid black;
+    display: flex;
+    flex-direction: column;
+}
+textarea{
+    height: 150px;
+    resize: none;
+}
+form>*{
+    margin-bottom: 0.5rem;
+}
+#error_message{
+    background-color: rgb(176, 18, 18);
+    color: white;
+    font-weight: bolder;
+    text-align: center;
+    padding: 0;
+    align-self: center;
+    transition: all 0.5s ease; 
+}
+div.column{
+    padding-right: 1rem;
+}
+fieldset{
+    border: 0;
+    margin-top: 0.5rem;
+}
+legend{
+    font-weight: bold;
+    /* padding-bottom: 0.5rem; */
+}

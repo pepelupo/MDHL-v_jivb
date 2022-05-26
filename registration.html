@@ -1,0 +1,49 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/ahl.css">
+    <title>MDHL - Registration</title>
+    <script src="./contactUsValidator.js"></script>
+</head>
+
+<body>
+    <header>
+        <div class="top">
+            <img id="logo" src="./assets/logo.png" alt="Logo">
+            <h1>Mighty Ducks Hockey League</h1>
+        </div>
+        <nav>
+            <a href="./index.html">Home</a>
+            <a href="./about.html">About us</a>
+            <a href="./rules.html">Rules</a>
+            <a href="./game_info.html">Schedule</a>
+            <a id="current" href="#">Registration</a>
+            <a href="./contact.html">Contact</a>
+        </nav>
+    </header>
+    <main class="column">
+        
+        <form id="contactUsForm" onsubmit="return validation()">
+            <div id="error_message"></div>
+            <legend>Contact Us</legend>
+
+            <input id="contact_name" type="text" placeholder="Name">
+
+            <input id="phone_number" type="text" placeholder="Phone number">
+
+            <input id="contact_email" type="text" placeholder="Email">
+
+            <textarea id="contact_subject" placeholder="Leave us your comment..."></textarea>
+            <input id="btn_submit" type="submit" value="Submit">
+        </form>
+
+    </main>
+    <footer>
+        <p>Martín Viola</p>
+    </footer>
+</body>
+
+</html>
